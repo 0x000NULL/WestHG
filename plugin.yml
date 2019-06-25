@@ -1,8 +1,8 @@
-name: NubesHG
-author: NubeBuster
+name: WestHG
+author: Ethan Aldrich
 version: 1.13
-main: com.nubebuster.hg.HG
-website: https://www.spigotmc.org/resources/nubes-hunger-games.9062/
+main: com.EthanAldrich.WestHG
+website: https://ethanaldrich.org
 load: Startup
 softdepend: [TerrainControl]
 permissions:

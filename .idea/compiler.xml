@@ -9,8 +9,5 @@
         <module name="NubesHG" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="NubesHG" target="1.7" />
-    </bytecodeTargetLevel>
   </component>
 </project>

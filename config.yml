@@ -2,7 +2,7 @@ rewriteconfig: false
 #The name of the world
 world: world
 #The motd will have two lines. This one, and an info line. You may use & for colors.
-motd: '&aA &c&lNubes&b&lHG &aServer'
+motd: '&aA &c&lWest&b&lHG &aServer'
 #Whether the world should regenerate
 regenerate: true
 #Time the timer should count down from before the game starts
