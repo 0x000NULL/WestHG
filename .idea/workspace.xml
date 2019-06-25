@@ -1,91 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+    <option name="FILTER_RESOLVED_ITEMS" value="false" />
+    <option name="SHOW_STRUCTURE" value="true" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="03fdcaca-0f58-4e59-beba-15cb48b2a0e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bukkit_bukkit_1_13_2_R0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NubesHG.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/Gamer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/HG.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/api/FeastEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/api/GameStartEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/api/NubesHGAPI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/api/SecondEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/api/WinEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/commands/FFeastCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/commands/FTimeCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/commands/FeastCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/commands/GM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/commands/HGCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/commands/InvCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/commands/KitCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/commands/Lag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/commands/SpawnCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/commands/SpectateCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/commands/StartCmd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/data/MySQL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/handlers/Cakes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/handlers/Feast.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/handlers/GenerationHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Archer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Boxer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Cannibal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Chemist.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Cultivator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Demoman.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Digger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Dwarf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Endermage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Fireman.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/FisherMan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Freezer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Frosty.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Grandpa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Gravedigger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Jumper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Kangaroo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Kaya.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Kit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Lumberjack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Miner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Monk.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Monster.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Ninja.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/None.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Poseidon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Reaper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Scout.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Snail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Stomper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Surprise.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Switcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Tank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Thor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Turtle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Vampire.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/kits/Viper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/listeners/AllTimeListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/listeners/GameListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/listeners/PreGameListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/utils/DataPair.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/utils/NameAlreadyInUseException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nubebuster/hg/utils/Undroppable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WestHG-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/WestHG-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -101,24 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/KitCmd.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-27">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/Lag.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-61">
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/SpawnCmd.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -164,11 +72,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/NubesHGAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugin.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -208,8 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Miner.java" />
-        <option value="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Monk.java" />
         <option value="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Ninja.java" />
         <option value="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Monster.java" />
         <option value="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/None.java" />
@@ -259,6 +186,8 @@
         <option value="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/NubesHGAPI.java" />
         <option value="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/SecondEvent.java" />
         <option value="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/WinEvent.java" />
+        <option value="$PROJECT_DIR$/plugin.yml" />
+        <option value="$PROJECT_DIR$/LICENSE" />
       </list>
     </option>
   </component>
@@ -286,11 +215,22 @@
           <item name="WestHG" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="WestHG" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="WestHG" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.bukkit:bukkit:1.13.2-R0.1-SNAPSHOT" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="25" />
     <option name="width" value="1400" />
@@ -338,6 +278,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -361,12 +302,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561444512162</updated>
-      <workItem from="1561444517026" duration="1217000" />
+      <workItem from="1561444517026" duration="1617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1217000" />
+    <option name="totallyTimeSpent" value="1617000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -379,11 +329,13 @@
       <window_info id="Learn" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Dependency Viewer" weight="0.3290461" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.3290461" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
-      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Version Control" weight="0.3290461" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -391,8 +343,8 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" visible="true" weight="0.32995737" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
+      <window_info active="true" anchor="right" id="Maven" visible="true" weight="0.32995737" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Database" />
@@ -407,20 +359,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Surprise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Stomper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Snail.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -762,8 +700,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/NubesHGAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
         </state>
       </provider>
     </entry>

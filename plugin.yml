@@ -3,7 +3,7 @@ author: Ethan Aldrich
 version: 1.13
 main: com.EthanAldrich.WestHG
 website: https://ethanaldrich.org
-load: Startup
+load: STARTUP
 softdepend: [TerrainControl]
 permissions:
   hg.kits.*:
