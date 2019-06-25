@@ -1,6 +1,7 @@
 NubesHG
 =======
-https://travis-ci.com/ethanaldrich9986/WestHG.svg?branch=master
+[![Build Status](https://travis-ci.com/ethanaldrich9986/WestHG.svg?branch=master)](https://travis-ci.com/ethanaldrich9986/WestHG)
+
 A hunger games plugin with an api so you can add kits yourself!
 Check the wiki if you want to make your own kits.
 
