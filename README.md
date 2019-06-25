@@ -13,4 +13,5 @@ Check the wiki if you want to make your own kits.
 2. Clone this repo and open the .iml file.
 3. choose the plu sunder the maven panel and choose th epom.xml
 4. Run the lifecycle tasks clean, validate, compile, test, package, and verify.
+
 Done!
