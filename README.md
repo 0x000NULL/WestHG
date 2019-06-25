@@ -5,7 +5,7 @@ A hunger games plugin with an api so you can add kits yourself!
 Check the wiki if you want to make your own kits.
 
 
-#Building
+# Building
 
 1. Use Jetbrains
 ...You can download it [here for students](https://www.jetbrains.com/student/) or [here for others.](https://www.jetbrains.com/idea/)
