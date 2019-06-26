@@ -1,6 +1,12 @@
 WestHG
 =======
-[![Build Status](https://travis-ci.com/ethanaldrich9986/WestHG.svg?branch=master)](https://travis-ci.com/ethanaldrich9986/WestHG) [![Contributors][contributors-shield]] [![MIT License][license-shield]][license-url]
+[![Build Status](https://travis-ci.com/ethanaldrich9986/WestHG.svg?branch=master)](https://travis-ci.com/ethanaldrich9986/WestHG) 
+![Contributors][contributors-shield] 
+[![MIT License][license-shield]][license-url]
+![GitHub repo size][repo-size]
+![GitHub issues][repo-issues]
+![GitHub pull requests][repo-pulls]
+![GitHub release][repo-version]
 
 A hunger games plugin based off of NubesHG with an api so you can add kits yourself!
 Check the wiki if you want to make your own kits.
@@ -39,6 +45,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: 	
+[contributors-shield]: 	https://img.shields.io/badge/contributors-2-orange.svg?style=flat-square
 [license-shield]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license-url]: https://choosealicense.com/licenses/mit
+[repo-size]: https://img.shields.io/github/repo-size/ethanaldrich9986/WestHG.svg?style=flat-square
+[repo-issues]: https://img.shields.io/github/issues-raw/ethanaldrich9986/WestHG.svg?style=flat-square
+[repo-pulls]: https://img.shields.io/github/issues-pr-raw/ethanaldrich9986/WestHG.svg?style=flat-square
+[repo-version]: https://img.shields.io/github/release/ethanaldrich9986/WestHG.svg?style=flat-square
