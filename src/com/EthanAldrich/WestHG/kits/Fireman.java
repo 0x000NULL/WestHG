@@ -1,15 +1,15 @@
 package com.EthanAldrich.WestHG.hg.kits;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.inventory.ItemStack;
 
-public class Fireman extends Kit {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Fireman extends com.EthanAldrich.WestHG.kits.Kit {
 
 	@Override
 	public String getKitName() {

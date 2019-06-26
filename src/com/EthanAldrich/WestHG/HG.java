@@ -1,44 +1,9 @@
 package com.EthanAldrich.WestHG;
 
-import java.io.File;
-import java.lang.reflect.Field;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.GameMode;
-import org.bukkit.Location;
-import org.bukkit.Material;
-import org.bukkit.World;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.enchantments.Enchantment;
-import org.bukkit.entity.Player;
-import org.bukkit.event.HandlerList;
-import org.bukkit.event.Listener;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.ShapelessRecipe;
-import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.potion.PotionEffect;
-import org.spigotmc.Metrics;
-import org.spigotmc.Metrics.Graph;
-
 import com.EthanAldrich.WestHG.api.GameStartEvent;
 import com.EthanAldrich.WestHG.api.SecondEvent;
 import com.EthanAldrich.WestHG.api.WinEvent;
-import com.EthanAldrich.WestHG.commands.FFeastCmd;
-import com.EthanAldrich.WestHG.commands.FTimeCmd;
-import com.EthanAldrich.WestHG.commands.FeastCmd;
-import com.EthanAldrich.WestHG.commands.GM;
-import com.EthanAldrich.WestHG.commands.HGCmd;
-import com.EthanAldrich.WestHG.commands.InvCmd;
-import com.EthanAldrich.WestHG.commands.KitCmd;
-import com.EthanAldrich.WestHG.commands.Lag;
-import com.EthanAldrich.WestHG.commands.SpawnCmd;
-import com.EthanAldrich.WestHG.commands.SpectateCmd;
-import com.EthanAldrich.WestHG.commands.StartCmd;
+import com.EthanAldrich.WestHG.commands.*;
 import com.EthanAldrich.WestHG.data.MySQL;
 import com.EthanAldrich.WestHG.handlers.Cakes;
 import com.EthanAldrich.WestHG.handlers.Feast;
@@ -48,6 +13,24 @@ import com.EthanAldrich.WestHG.listeners.AllTimeListener;
 import com.EthanAldrich.WestHG.listeners.GameListener;
 import com.EthanAldrich.WestHG.listeners.PreGameListener;
 import com.EthanAldrich.WestHG.utils.Undroppable;
+import org.bstats.bukkit.Metrics;
+import org.bukkit.*;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.Player;
+import org.bukkit.event.HandlerList;
+import org.bukkit.event.Listener;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.ShapelessRecipe;
+import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.potion.PotionEffect;
+
+import java.io.File;
+import java.lang.reflect.Field;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 /**
  * @author Ethan Aldrich
