@@ -7,9 +7,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03fdcaca-0f58-4e59-beba-15cb48b2a0e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/WestHG.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/WestHG-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/WestHG-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/Gamer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/Gamer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/HG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/HG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/FeastEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/FeastEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/GameStartEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/GameStartEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/NubesHGAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/NubesHGAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/SecondEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/SecondEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/WinEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/WinEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/FFeastCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/FFeastCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/FTimeCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/FTimeCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/FeastCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/FeastCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/GM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/GM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/HGCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/HGCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/InvCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/InvCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/KitCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/KitCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/Lag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/Lag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/SpawnCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/SpawnCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/SpectateCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/SpectateCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/StartCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/StartCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/data/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/data/MySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/handlers/Cakes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/handlers/Cakes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/handlers/Feast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/handlers/Feast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/handlers/GenerationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/handlers/GenerationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Archer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Archer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Boxer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Boxer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Cannibal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Cannibal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Chemist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Chemist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Cultivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Cultivator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Demoman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Demoman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Digger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Digger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Dwarf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Dwarf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Endermage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Endermage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Fireman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Fireman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/FisherMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/FisherMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Freezer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Freezer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Frosty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Frosty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Grandpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Grandpa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Gravedigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Gravedigger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Jumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Jumper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Kangaroo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Kangaroo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Kaya.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Kaya.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Kit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Kit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Lumberjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Lumberjack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Miner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Miner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Monk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Monk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Ninja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Ninja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/None.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/None.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Poseidon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Poseidon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Reaper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Reaper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Scout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Scout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Snail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Snail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Stomper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Stomper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Surprise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Surprise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Switcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Switcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Tank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Thor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Thor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Turtle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Turtle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Vampire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Vampire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Viper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Viper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/listeners/AllTimeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/listeners/AllTimeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/listeners/GameListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/listeners/GameListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/listeners/PreGameListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/listeners/PreGameListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/DataPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/DataPair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/NameAlreadyInUseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/NameAlreadyInUseException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/Undroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/Undroppable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/WestHG-1.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +95,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -38,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/FeastEvent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
+              <caret column="36" selection-start-column="36" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -47,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/GameStartEvent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
+              <caret column="36" selection-start-column="36" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -81,8 +155,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            <state relative-caret-position="718">
+              <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -100,7 +174,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/SecondEvent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
+              <caret column="36" selection-start-column="36" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -214,12 +288,6 @@
           <item name="WestHG" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="WestHG" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.bukkit:bukkit:1.13.2-R0.1-SNAPSHOT" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-        </path>
       </expand>
       <select />
     </treeState>
@@ -235,6 +303,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,12 +329,15 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="EthanAldrich" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="WestHG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,11 +370,12 @@
       <updated>1561444512162</updated>
       <workItem from="1561444517026" duration="1617000" />
       <workItem from="1561446280169" duration="69000" />
+      <workItem from="1561530634908" duration="612000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1686000" />
+    <option name="totallyTimeSpent" value="2298000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -316,7 +389,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -326,7 +399,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -342,7 +415,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.32995737" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -654,14 +727,14 @@
     <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/FeastEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/GameStartEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -675,27 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/SecondEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/WinEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -706,10 +758,31 @@
     <entry file="file://$PROJECT_DIR$/config.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/SecondEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/WinEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
         </state>
       </provider>
     </entry>
