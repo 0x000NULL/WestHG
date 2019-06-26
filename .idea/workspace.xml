@@ -6,86 +6,7 @@
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03fdcaca-0f58-4e59-beba-15cb48b2a0e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/WestHG.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/Gamer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/Gamer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/HG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/HG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/FeastEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/FeastEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/GameStartEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/GameStartEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/NubesHGAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/NubesHGAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/SecondEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/SecondEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/WinEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/api/WinEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/FFeastCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/FFeastCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/FTimeCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/FTimeCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/FeastCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/FeastCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/GM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/GM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/HGCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/HGCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/InvCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/InvCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/KitCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/KitCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/Lag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/Lag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/SpawnCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/SpawnCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/SpectateCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/SpectateCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/StartCmd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/commands/StartCmd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/data/MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/data/MySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/handlers/Cakes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/handlers/Cakes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/handlers/Feast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/handlers/Feast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/handlers/GenerationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/handlers/GenerationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Archer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Archer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Boxer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Boxer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Cannibal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Cannibal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Chemist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Chemist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Cultivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Cultivator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Demoman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Demoman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Digger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Digger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Dwarf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Dwarf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Endermage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Endermage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Fireman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Fireman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/FisherMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/FisherMan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Freezer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Freezer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Frosty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Frosty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Grandpa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Grandpa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Gravedigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Gravedigger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Jumper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Jumper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Kangaroo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Kangaroo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Kaya.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Kaya.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Kit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Kit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Lumberjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Lumberjack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Miner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Miner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Monk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Monk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Ninja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Ninja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/None.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/None.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Poseidon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Poseidon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Reaper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Reaper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Scout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Scout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Snail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Snail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Stomper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Stomper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Surprise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Surprise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Switcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Switcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Tank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Thor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Thor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Turtle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Turtle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Vampire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Vampire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Viper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/kits/Viper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/listeners/AllTimeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/listeners/AllTimeListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/listeners/GameListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/listeners/GameListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/listeners/PreGameListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/listeners/PreGameListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/DataPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/DataPair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/NameAlreadyInUseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/NameAlreadyInUseException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/Undroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/Undroppable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/WestHG-1.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-    </list>
+    <list default="true" id="03fdcaca-0f58-4e59-beba-15cb48b2a0e7" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -155,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="718">
-              <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+            <state relative-caret-position="650">
+              <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -303,7 +224,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -337,7 +258,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,11 +292,12 @@
       <workItem from="1561444517026" duration="1617000" />
       <workItem from="1561446280169" duration="69000" />
       <workItem from="1561530634908" duration="612000" />
+      <workItem from="1561531338973" duration="269000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2298000" />
+    <option name="totallyTimeSpent" value="2567000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -389,7 +311,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -781,8 +703,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+        <state relative-caret-position="650">
+          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
         </state>
       </provider>
     </entry>
