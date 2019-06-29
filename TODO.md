@@ -1,7 +1,7 @@
 TODO
 ======
 # REMOVE METRICS
-*Or just fix it.... 
+* *Or just fix it*.... 
 
 
 ## Add scoring
@@ -12,4 +12,4 @@ TODO
 ## MAKE IT WORK
 * Fix the repos
 * fix missing symbols.
-*REMOVE METRICS
+* REMOVE METRICS
