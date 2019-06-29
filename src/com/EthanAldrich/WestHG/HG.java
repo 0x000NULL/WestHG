@@ -55,36 +55,15 @@ public class HG extends JavaPlugin {
 			GenerationHandler.deleteWorld();
 	}
 
-	@Override
-	public void onEnable() {
-		try {
-			metrics = new Metrics();
-			metrics.start();
-		} catch (Exception e) {
-			e.printStackTrace();
+	public static int check() {
+		int players = com.EthanAldrich.WestHG.Gamer.getAliveGamers().size();
+		if (players <= 1) {
+			if (com.EthanAldrich.WestHG.Gamer.getAliveGamers().size() > 0)
+				winner(com.EthanAldrich.WestHG.Gamer.getAliveGamers().get(0));
+			else
+				winner(null);
 		}
-		if (config.getBoolean("regenerate"))
-			GenerationHandler.generateChunks();
-		Kit.init();
-		Bukkit.getPluginManager().registerEvents(new AllTimeListener(), this);
-		startPregameTimer();
-		registerPreEvents();
-		registerCommands();
-		registerEnchantments();
-		registerRecipes();
-
-		Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(this, new Lag(), 20L, 1L);
-
-		for (Player p : Bukkit.getOnlinePlayers())
-			Gamer.getGamer(p);
-
-		if (config.getBoolean("mysql"))
-			try {
-				MySQL.initialize(config.getString("host"), config.getInt("port"), config.getString("database"),
-						config.getString("table"), config.getString("user"), config.getString("password"));
-			} catch (ClassNotFoundException | SQLException e) {
-				e.printStackTrace();
-			}
+		return players;
 	}
 
 	@Override
@@ -95,29 +74,36 @@ public class HG extends JavaPlugin {
 	@SuppressWarnings("unused")
 	private int preGameTask, gameTask;
 
-	private void startPregameTimer() {
-		preGameTask = Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
+	@SuppressWarnings("deprecation")
+	private static void winner(final com.EthanAldrich.WestHG.Gamer gamer) {
+		if (gamer == null) {
+			shutdown(ChatColor.RED + "Nobody won!");
+			return;
+		}
+		Bukkit.getPluginManager().callEvent(new WinEvent(gamer));
+		HG.registerPreEvents();
+		Cakes.cakes(gamer.getPlayer());
+		Bukkit.getScheduler().scheduleAsyncDelayedTask(HG, new Runnable() {
+			public void run() {
+				try {
+					MySQL.incrementStat(gamer.getPlayer().getUniqueId(), "wins");
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		});
+		Bukkit.getScheduler().scheduleSyncRepeatingTask(HG, new Runnable() {
 			@Override
 			public void run() {
-				if (preTime == 180 || preTime == 120 || preTime == 60) {
-					Bukkit.getServer()
-							.broadcastMessage(ChatColor.RED + "Tournament starting in " + preTime / 60 + " minutes.");
-				} else if (preTime == 45 || preTime == 30 || preTime == 15 || (preTime > 0 && preTime <= 10)) {
-					Bukkit.getServer()
-							.broadcastMessage(ChatColor.RED + "Tournament starting in " + preTime + " seconds.");
-				} else if (preTime == 0) {
-					if (Gamer.getAliveGamers().size() < minimumPlayers) {
-						Bukkit.getServer().broadcastMessage(ChatColor.RED + "Not enough players to start.");
-						preTime = resetTime;
-						return;
-					}
-					preTime = -1;
-					start();
-					return;
-				}
-				preTime--;
+				Bukkit.getServer().broadcastMessage(ChatColor.RED + gamer.getName() + " has won!!!");
 			}
-		}, 0, 20);
+		}, 1, 20);
+		Bukkit.getScheduler().scheduleSyncDelayedTask(HG, new Runnable() {
+			@Override
+			public void run() {
+				shutdown(ChatColor.RED + gamer.getName() + " has won!!!\nServer restarting.");
+			}
+		}, 200);
 	}
 
 	private void startGameTimer() {
@@ -145,60 +131,61 @@ public class HG extends JavaPlugin {
 		}, 0, 20);
 	}
 
-	@SuppressWarnings("deprecation")
-	private void start() {
-		Bukkit.getScheduler().cancelTask(preGameTask);
-		unRegisterPreEvents();
-		registerGameEvents();
-		int parts = 0;
-		for (Gamer g : Gamer.getGamers())
-			if (g.isAlive())
-				parts++;
-		Bukkit.getServer().broadcastMessage(ChatColor.RED + "The tournament has started!\n" + "There are " + parts
-				+ " players participating.\n" + "Everyone is invincible for 2 minutes.\n" + "Good Luck!");
-		World world = Bukkit.getWorld("world");
-		List<Player> participating = new ArrayList<Player>();
-		for (Gamer g : Gamer.getGamers()) {
-			if (g.getPlayer().getGameMode() != GameMode.SURVIVAL)
-				continue;
-			Player p = g.getPlayer();
-			g.setAlive(true);
-			p.closeInventory();
-			clearPlayer(p);
-			p.getInventory().addItem(new ItemStack(Material.COMPASS));
-			if (g.getKit().getKitName() == "Surprise") {
-				g.setKit(Kit.kits.get(new Random().nextInt(Kit.kits.size())));
-				p.sendMessage(ChatColor.GREEN + ChatColor.BOLD.toString() + "You got the " + g.getKit().getKitName()
-						+ " kit!");
-			}
-			g.applyKit();
-			p.updateInventory();
-			p.teleport(new Location(world, getRandom(-50, 50), 80, getRandom(-50, 50)));
-			participating.add(p);
+	@Override
+	public void onEnable() {
+		try {
+			metrics = new Metrics();
+			metrics.start();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-		startGameTimer();
-		Bukkit.getPluginManager().callEvent(new GameStartEvent(participating));
-		logKits();
+		if (config.getBoolean("regenerate"))
+			GenerationHandler.generateChunks();
+		Kit.init();
+		Bukkit.getPluginManager().registerEvents(new AllTimeListener(), this);
+		startPregameTimer();
+		registerPreEvents();
+		registerCommands();
+		registerEnchantments();
+		registerRecipes();
+
+		Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(this, new Lag(), 20L, 1L);
+
+		for (Player p : Bukkit.getOnlinePlayers())
+			com.EthanAldrich.WestHG.Gamer.getGamer(p);
+
+		if (config.getBoolean("mysql"))
+			try {
+				MySQL.initialize(config.getString("host"), config.getInt("port"), config.getString("database"),
+						config.getString("table"), config.getString("user"), config.getString("password"));
+			} catch (ClassNotFoundException | SQLException e) {
+				e.printStackTrace();
+			}
 	}
 
-	private void logKits() {
-		Graph gr = metrics.createGraph("Kits");
-		for (Kit k : Kit.kits) {
-			int chosen = 0;
-			for (Gamer g : Gamer.getGamers())
-				if (g.getKit() == k)
-					chosen++;
-			if (chosen == 0)
-				continue;
-			final int chosenf = chosen;
-			gr.addPlotter(new Metrics.Plotter(k.getKitName()) {
-				@Override
-				public int getValue() {
-					return chosenf;
+	private void startPregameTimer() {
+		preGameTask = Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
+			@Override
+			public void run() {
+				if (preTime == 180 || preTime == 120 || preTime == 60) {
+					Bukkit.getServer()
+							.broadcastMessage(ChatColor.RED + "Tournament starting in " + preTime / 60 + " minutes.");
+				} else if (preTime == 45 || preTime == 30 || preTime == 15 || (preTime > 0 && preTime <= 10)) {
+					Bukkit.getServer()
+							.broadcastMessage(ChatColor.RED + "Tournament starting in " + preTime + " seconds.");
+				} else if (preTime == 0) {
+					if (com.EthanAldrich.WestHG.Gamer.getAliveGamers().size() < minimumPlayers) {
+						Bukkit.getServer().broadcastMessage(ChatColor.RED + "Not enough players to start.");
+						preTime = resetTime;
+						return;
+					}
+					preTime = -1;
+					start();
+					return;
 				}
-			});
-		}
-		metrics.addGraph(gr);
+				preTime--;
+			}
+		}, 0, 20);
 	}
 
 	private Listener preListener, gameListener;
@@ -265,47 +252,60 @@ public class HG extends JavaPlugin {
 		feastTime = config.getInt("feast");
 	}
 
-	public static int check() {
-		int players = Gamer.getAliveGamers().size();
-		if (players <= 1) {
-			if (Gamer.getAliveGamers().size() > 0)
-				winner(Gamer.getAliveGamers().get(0));
-			else
-				winner(null);
+	@SuppressWarnings("deprecation")
+	private void start() {
+		Bukkit.getScheduler().cancelTask(preGameTask);
+		unRegisterPreEvents();
+		registerGameEvents();
+		int parts = 0;
+		for (com.EthanAldrich.WestHG.Gamer g : com.EthanAldrich.WestHG.Gamer.getGamers())
+			if (g.isAlive())
+				parts++;
+		Bukkit.getServer().broadcastMessage(ChatColor.RED + "The tournament has started!\n" + "There are " + parts
+				+ " players participating.\n" + "Everyone is invincible for 2 minutes.\n" + "Good Luck!");
+		World world = Bukkit.getWorld("world");
+		List<Player> participating = new ArrayList<Player>();
+		for (com.EthanAldrich.WestHG.Gamer g : com.EthanAldrich.WestHG.Gamer.getGamers()) {
+			if (g.getPlayer().getGameMode() != GameMode.SURVIVAL)
+				continue;
+			Player p = g.getPlayer();
+			g.setAlive(true);
+			p.closeInventory();
+			clearPlayer(p);
+			p.getInventory().addItem(new ItemStack(Material.COMPASS));
+			if (g.getKit().getKitName() == "Surprise") {
+				g.setKit(Kit.kits.get(new Random().nextInt(Kit.kits.size())));
+				p.sendMessage(ChatColor.GREEN + ChatColor.BOLD.toString() + "You got the " + g.getKit().getKitName()
+						+ " kit!");
+			}
+			g.applyKit();
+			p.updateInventory();
+			p.teleport(new Location(world, getRandom(-50, 50), 80, getRandom(-50, 50)));
+			participating.add(p);
 		}
-		return players;
+		startGameTimer();
+		Bukkit.getPluginManager().callEvent(new GameStartEvent(participating));
+		logKits();
 	}
 
-	@SuppressWarnings("deprecation")
-	private static void winner(final Gamer gamer) {
-		if (gamer == null) {
-			shutdown(ChatColor.RED + "Nobody won!");
-			return;
-		}
-		Bukkit.getPluginManager().callEvent(new WinEvent(gamer));
-		HG.registerPreEvents();
-		Cakes.cakes(gamer.getPlayer());
-		Bukkit.getScheduler().scheduleAsyncDelayedTask(HG, new Runnable() {
-			public void run() {
-				try {
-					MySQL.incrementStat(gamer.getPlayer().getUniqueId(), "wins");
-				} catch (SQLException e) {
-					e.printStackTrace();
+	private void logKits() {
+		Graph gr = metrics.createGraph("Kits");
+		for (Kit k : Kit.kits) {
+			int chosen = 0;
+			for (com.EthanAldrich.WestHG.Gamer g : com.EthanAldrich.WestHG.Gamer.getGamers())
+				if (g.getKit() == k)
+					chosen++;
+			if (chosen == 0)
+				continue;
+			final int chosenf = chosen;
+			gr.addPlotter(new Metrics.Plotter(k.getKitName()) {
+				@Override
+				public int getValue() {
+					return chosenf;
 				}
-			}
-		});
-		Bukkit.getScheduler().scheduleSyncRepeatingTask(HG, new Runnable() {
-			@Override
-			public void run() {
-				Bukkit.getServer().broadcastMessage(ChatColor.RED + gamer.getName() + " has won!!!");
-			}
-		}, 1, 20);
-		Bukkit.getScheduler().scheduleSyncDelayedTask(HG, new Runnable() {
-			@Override
-			public void run() {
-				shutdown(ChatColor.RED + gamer.getName() + " has won!!!\nServer restarting.");
-			}
-		}, 200);
+			});
+		}
+		metrics.addGraph(gr);
 	}
 
 	private static void shutdown(String message) {
