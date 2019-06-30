@@ -145,10 +145,10 @@ public class AllTimeListener implements Listener {
 			gloc.setZ(900);
 		if (loc.getZ() < -500)
 			gloc.setZ(-900);
-		Entity ghast = p.getWorld().spawnCreature(gloc, EntityType.GHAST);
+        Entity ghast = p.getWorld().spawnEntity(gloc, EntityType.GHAST);
 		p.damage(4, ghast);
 		ghast.remove();
-		p.playSound(p.getLocation(), Sound.FIZZ, 10, 1);
+        p.playSound(p.getLocation(), Sound.ITEM_BOTTLE_FILL, 10, 1);
 	}
 
 	@EventHandler
