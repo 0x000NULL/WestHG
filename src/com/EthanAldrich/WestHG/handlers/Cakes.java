@@ -1,13 +1,8 @@
-package com.EthanAldrich.WestHG.handlers;
+package WestHG.handlers;
 
-import java.util.Random;
-
-import org.bukkit.Bukkit;
-import org.bukkit.Color;
-import org.bukkit.FireworkEffect;
+import WestHG.HG;
+import org.bukkit.*;
 import org.bukkit.FireworkEffect.Type;
-import org.bukkit.Location;
-import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.entity.EntityType;
@@ -15,7 +10,7 @@ import org.bukkit.entity.Firework;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.meta.FireworkMeta;
 
-import com.EthanAldrich.WestHG.HG;
+import java.util.Random;
 
 public class Cakes {
 	public static void cakes(final Player p) {

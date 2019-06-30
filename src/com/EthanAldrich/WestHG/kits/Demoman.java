@@ -1,7 +1,4 @@
-package com.EthanAldrich.WestHG.kits;
-
-import java.util.ArrayList;
-import java.util.List;
+package WestHG.kits;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -15,6 +12,9 @@ import org.bukkit.event.block.BlockExplodeEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Demoman extends Kit {
 
@@ -45,14 +45,12 @@ public class Demoman extends Kit {
 
 	@EventHandler
 	public void onBreak(BlockBreakEvent event) {
-		if (traps.contains(event.getBlock()))
-			traps.remove(event.getBlock());
+        traps.remove(event.getBlock());
 	}
 
 	@EventHandler
 	public void onExplode(BlockExplodeEvent event) {
-		if (traps.contains(event.getBlock()))
-			traps.remove(event.getBlock());
+        traps.remove(event.getBlock());
 	}
 
 	@EventHandler

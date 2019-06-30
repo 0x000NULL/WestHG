@@ -1,8 +1,4 @@
-package com.EthanAldrich.WestHG.kits;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+package WestHG.kits;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -12,6 +8,10 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerToggleSneakEvent;
 import org.bukkit.inventory.ItemStack;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class Ninja extends Kit {
 

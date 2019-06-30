@@ -1,10 +1,9 @@
-package com.EthanAldrich.WestHG.handlers;
+package WestHG.handlers;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
+import WestHG.HG;
+import WestHG.utils.DataPair;
+import net.minecraft.server.v1_8_R3.ChunkProviderServer;
+import net.minecraft.server.v1_8_R3.WorldServer;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Chunk;
@@ -12,11 +11,10 @@ import org.bukkit.World;
 import org.bukkit.craftbukkit.v1_8_R3.CraftWorld;
 import org.bukkit.entity.Player;
 
-import com.EthanAldrich.WestHG.HG;
-import com.EthanAldrich.WestHG.utils.DataPair;
-
-import net.minecraft.server.v1_8_R3.ChunkProviderServer;
-import net.minecraft.server.v1_8_R3.WorldServer;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class GenerationHandler {
 
@@ -62,7 +60,7 @@ public class GenerationHandler {
 						ChunkProviderServer nmsChunkProviderServer;
 						int cx;
 						while ((cordsItel.hasNext()) && (startedGeneration + 50L > System.currentTimeMillis())) {
-							DataPair pair = (DataPair) cordsItel.next();
+							DataPair pair = cordsItel.next();
 
 							if (!world.isChunkLoaded(pair.getX(), pair.getZ())) {
 								world.loadChunk(pair.getX(), pair.getZ());

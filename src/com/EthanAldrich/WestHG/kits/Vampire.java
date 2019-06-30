@@ -1,7 +1,4 @@
-package com.EthanAldrich.WestHG.kits;
-
-import java.util.ArrayList;
-import java.util.List;
+package WestHG.kits;
 
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -9,6 +6,9 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.inventory.ItemStack;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Vampire extends Kit {
 
@@ -32,7 +32,7 @@ public class Vampire extends Kit {
 					if (p.getHealth() > 18) {
 						ItemStack item = new ItemStack(373, 1, (short) 16428);
 
-						p.getInventory().addItem(new ItemStack[] { item });
+                        p.getInventory().addItem(item);
 						p.updateInventory();
 					}
 					p.setHealth(20);

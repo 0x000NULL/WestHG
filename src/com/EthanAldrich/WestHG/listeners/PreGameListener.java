@@ -1,7 +1,6 @@
-package com.EthanAldrich.WestHG.listeners;
+package WestHG.listeners;
 
-import java.util.Random;
-
+import WestHG.HG;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
@@ -18,7 +17,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerPickupItemEvent;
 
-import com.EthanAldrich.WestHG.HG;
+import java.util.Random;
 
 public class PreGameListener implements Listener {
 

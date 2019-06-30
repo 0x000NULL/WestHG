@@ -1,9 +1,6 @@
-package com.EthanAldrich.WestHG.kits;
+package WestHG.kits;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
+import WestHG.HG;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -20,7 +17,9 @@ import org.bukkit.event.entity.EntityExplodeEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 
-import com.EthanAldrich.WestHG.HG;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class Thor extends Kit {
 
@@ -42,7 +41,7 @@ public class Thor extends Kit {
 		if (event.getAction() == Action.RIGHT_CLICK_BLOCK) {
 			Player p = event.getPlayer();
 			if (hasAbillity(p) && (p.getItemInHand().getType() == Material.WOOD_AXE)) {
-				if (HG.HG.gameTime < 120) {
+				if (HG.gameTime < 120) {
 					p.sendMessage(ChatColor.RED + "You can't do that during invincibility.");
 					return;
 				}
@@ -88,13 +87,13 @@ public class Thor extends Kit {
 	}
 
 	public void CreateExplosion(Location loc) {
-		TNTPrimed tnt = (TNTPrimed) loc.getWorld().spawn(loc, TNTPrimed.class);
+		TNTPrimed tnt = loc.getWorld().spawn(loc, TNTPrimed.class);
 		tnt.setFuseTicks(0);
 		tnt.setYield(2.5F);
 	}
 
 	public void CreateSmallExplosion(Location loc) {
-		TNTPrimed tnt = (TNTPrimed) loc.getWorld().spawn(loc, TNTPrimed.class);
+		TNTPrimed tnt = loc.getWorld().spawn(loc, TNTPrimed.class);
 		tnt.setFuseTicks(0);
 		tnt.setYield(2.0F);
 	}

@@ -1,7 +1,4 @@
-package com.EthanAldrich.WestHG.kits;
-
-import java.util.ArrayList;
-import java.util.List;
+package WestHG.kits;
 
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -11,6 +8,9 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Poseidon extends Kit {
 

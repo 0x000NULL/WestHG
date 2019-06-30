@@ -1,14 +1,10 @@
-package com.EthanAldrich.WestHG.listeners;
+package WestHG.listeners;
 
-import java.sql.SQLException;
-import java.util.HashMap;
-
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.GameMode;
-import org.bukkit.Location;
-import org.bukkit.Material;
-import org.bukkit.Sound;
+import WestHG.Gamer;
+import WestHG.HG;
+import WestHG.data.MySQL;
+import WestHG.utils.Undroppable;
+import org.bukkit.*;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
@@ -18,20 +14,11 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.event.inventory.InventoryClickEvent;
-import org.bukkit.event.player.AsyncPlayerChatEvent;
-import org.bukkit.event.player.PlayerDropItemEvent;
-import org.bukkit.event.player.PlayerGameModeChangeEvent;
-import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerMoveEvent;
-import org.bukkit.event.player.PlayerPortalEvent;
-import org.bukkit.event.player.PlayerQuitEvent;
+import org.bukkit.event.player.*;
 import org.bukkit.event.server.ServerListPingEvent;
 
-import com.EthanAldrich.WestHG.Gamer;
-import com.EthanAldrich.WestHG.HG;
-import com.EthanAldrich.WestHG.data.MySQL;
-import com.EthanAldrich.WestHG.utils.Undroppable;
+import java.sql.SQLException;
+import java.util.HashMap;
 
 public class AllTimeListener implements Listener {
 
@@ -101,7 +88,7 @@ public class AllTimeListener implements Listener {
 
 	@EventHandler
 	public void onHunger(FoodLevelChangeEvent event) {
-		if (HG.HG.gameTime < 120)
+		if (HG.gameTime < 120)
 			event.setCancelled(true);
 	}
 
@@ -117,7 +104,7 @@ public class AllTimeListener implements Listener {
 	public void onJoin(PlayerJoinEvent event) {
 		final Player p = event.getPlayer();
 		Gamer g = Gamer.getGamer(p);
-		if (HG.HG.gameTime > -1 && !g.isAlive())
+		if (HG.gameTime > -1 && !g.isAlive())
 			event.getPlayer().setGameMode(GameMode.CREATIVE);
 		Bukkit.getScheduler().scheduleAsyncDelayedTask(HG.HG, new Runnable() {
 			public void run() {

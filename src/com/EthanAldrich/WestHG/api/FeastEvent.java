@@ -1,4 +1,4 @@
-package com.EthanAldrich.WestHG.api;
+package WestHG.api;
 
 import org.bukkit.Location;
 import org.bukkit.event.Event;

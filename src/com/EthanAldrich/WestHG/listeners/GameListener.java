@@ -1,16 +1,11 @@
-package com.EthanAldrich.WestHG.listeners;
+package WestHG.listeners;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
+import WestHG.Gamer;
+import WestHG.HG;
+import WestHG.data.MySQL;
+import WestHG.utils.Undroppable;
 import org.apache.commons.lang.WordUtils;
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.DyeColor;
-import org.bukkit.GameMode;
-import org.bukkit.Material;
+import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -26,20 +21,15 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
-import org.bukkit.event.player.PlayerDropItemEvent;
-import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.event.player.PlayerMoveEvent;
-import org.bukkit.event.player.PlayerPickupItemEvent;
-import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.event.player.PlayerRespawnEvent;
+import org.bukkit.event.player.*;
 import org.bukkit.inventory.EnchantingInventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.material.Dye;
 
-import com.EthanAldrich.WestHG.Gamer;
-import com.EthanAldrich.WestHG.HG;
-import com.EthanAldrich.WestHG.data.MySQL;
-import com.EthanAldrich.WestHG.utils.Undroppable;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class GameListener implements Listener {
 
@@ -51,7 +41,7 @@ public class GameListener implements Listener {
 
 	@EventHandler
 	public void onDamageInv(EntityDamageEvent event) {
-		if (event.getEntity() instanceof Player && HG.HG.gameTime < 120)
+		if (event.getEntity() instanceof Player && HG.gameTime < 120)
 			event.setCancelled(true);
 	}
 
@@ -73,7 +63,7 @@ public class GameListener implements Listener {
 			final Player killer = event.getEntity().getKiller();
 			String weapon = WordUtils
 					.capitalizeFully(killer.getItemInHand().getType().toString().replace("_", " ").toLowerCase());
-			String killname = killer.getName() + "(" + Gamer.getGamer(killer).getKit().getKitName() + ")";
+			String killname = killer.getName() + "(" + Gamer.getGamer(killer) + ")";
 			if (r.nextBoolean())
 				event.setDeathMessage("%p entered their next life, courtesy of " + killname + "'s " + weapon);
 			else
@@ -105,7 +95,7 @@ public class GameListener implements Listener {
 		deag.setAlive(false);
 		event.setDeathMessage(ChatColor.AQUA
 				+ event.getDeathMessage().replace("%p",
-						dead.getName() + "(" + Gamer.getGamer(dead).getKit().getKitName() + ")")
+				dead.getName() + "(" + Gamer.getGamer(dead) + ")")
 				+ ".\n" + HG.check() + " players remaining.");
 		Bukkit.getScheduler().scheduleAsyncDelayedTask(HG.HG, new Runnable() {
 			public void run() {
@@ -216,8 +206,7 @@ public class GameListener implements Listener {
 			public void run() {
 				if (g.getPlayer() == null) {
 					g.remove();
-					Bukkit.getServer().broadcastMessage(ChatColor.AQUA + g.getName() + "(" + g.getKit().getKitName()
-							+ ") was disconnected for too long and has forfeit!");
+					Bukkit.getServer().broadcastMessage(ChatColor.AQUA + g.getName() + " was disconnected for too long and has forfeit!");
 					HG.check();
 				}
 			}
@@ -226,7 +215,7 @@ public class GameListener implements Listener {
 
 	@EventHandler
 	public void onMove(PlayerMoveEvent event) {
-		if (HG.HG.gameTime > 120)
+		if (HG.gameTime > 120)
 			return;
 		if (event.getPlayer().getFireTicks() > 0)
 			event.getPlayer().setFireTicks(0);

@@ -1,14 +1,8 @@
-package com.EthanAldrich.WestHG.handlers;
+package WestHG.handlers;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
-import org.bukkit.Material;
-import org.bukkit.World;
+import WestHG.HG;
+import WestHG.api.FeastEvent;
+import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Chest;
@@ -20,8 +14,9 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.Potion;
 import org.bukkit.potion.PotionType;
 
-import com.EthanAldrich.WestHG.HG;
-import com.EthanAldrich.WestHG.api.FeastEvent;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class Feast implements Listener {
 

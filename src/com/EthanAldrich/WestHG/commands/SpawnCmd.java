@@ -1,14 +1,13 @@
-package com.EthanAldrich.WestHG.commands;
+package WestHG.commands;
 
-import java.util.Random;
-
+import WestHG.HG;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.EthanAldrich.WestHG.HG;
+import java.util.Random;
 
 public class SpawnCmd implements CommandExecutor {
 

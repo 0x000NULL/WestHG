@@ -1,18 +1,18 @@
 package WestHG;
 
-import com.EthanAldrich.WestHG.api.GameStartEvent;
-import com.EthanAldrich.WestHG.api.SecondEvent;
-import com.EthanAldrich.WestHG.api.WinEvent;
-import com.EthanAldrich.WestHG.commands.*;
-import com.EthanAldrich.WestHG.data.MySQL;
-import com.EthanAldrich.WestHG.handlers.Cakes;
-import com.EthanAldrich.WestHG.handlers.Feast;
-import com.EthanAldrich.WestHG.handlers.GenerationHandler;
-import com.EthanAldrich.WestHG.kits.Kit;
-import com.EthanAldrich.WestHG.listeners.AllTimeListener;
-import com.EthanAldrich.WestHG.listeners.GameListener;
-import com.EthanAldrich.WestHG.listeners.PreGameListener;
-import com.EthanAldrich.WestHG.utils.Undroppable;
+import WestHG.api.GameStartEvent;
+import WestHG.api.SecondEvent;
+import WestHG.api.WinEvent;
+import WestHG.commands.*;
+import WestHG.data.MySQL;
+import WestHG.handlers.Cakes;
+import WestHG.handlers.Feast;
+import WestHG.handlers.GenerationHandler;
+import WestHG.kits.Kit;
+import WestHG.listeners.AllTimeListener;
+import WestHG.listeners.GameListener;
+import WestHG.listeners.PreGameListener;
+import WestHG.utils.Undroppable;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.*;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -41,7 +41,8 @@ public class HG extends JavaPlugin {
 	public static HG HG;
 	public Metrics metrics;
 	public String motd;
-	public int preTime, gameTime = -1;
+	public static int gameTime = -1;
+	public int preTime;
 	public FileConfiguration config;
 
 	private int minimumPlayers, resetTime, feastTime;
@@ -56,10 +57,10 @@ public class HG extends JavaPlugin {
 	}
 
 	public static int check() {
-		int players = com.EthanAldrich.WestHG.Gamer.getAliveGamers().size();
+		int players = WestHG.Gamer.getAliveGamers().size();
 		if (players <= 1) {
-			if (com.EthanAldrich.WestHG.Gamer.getAliveGamers().size() > 0)
-				winner(com.EthanAldrich.WestHG.Gamer.getAliveGamers().get(0));
+			if (Gamer.getAliveGamers().size() > 0)
+				winner(Gamer.getAliveGamers().get(0));
 			else
 				winner(null);
 		}
@@ -75,7 +76,7 @@ public class HG extends JavaPlugin {
 	private int preGameTask, gameTask;
 
 	@SuppressWarnings("deprecation")
-	private static void winner(final com.EthanAldrich.WestHG.Gamer gamer) {
+	private static void winner(final WestHG.Gamer gamer) {
 		if (gamer == null) {
 			shutdown(ChatColor.RED + "Nobody won!");
 			return;
@@ -146,7 +147,7 @@ public class HG extends JavaPlugin {
 		Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(this, new Lag(), 20L, 1L);
 
 		for (Player p : Bukkit.getOnlinePlayers())
-			com.EthanAldrich.WestHG.Gamer.getGamer(p);
+			Gamer.getGamer(p);
 
 		if (config.getBoolean("mysql"))
 			try {
@@ -168,7 +169,7 @@ public class HG extends JavaPlugin {
 					Bukkit.getServer()
 							.broadcastMessage(ChatColor.RED + "Tournament starting in " + preTime + " seconds.");
 				} else if (preTime == 0) {
-					if (com.EthanAldrich.WestHG.Gamer.getAliveGamers().size() < minimumPlayers) {
+					if (Gamer.getAliveGamers().size() < minimumPlayers) {
 						Bukkit.getServer().broadcastMessage(ChatColor.RED + "Not enough players to start.");
 						preTime = resetTime;
 						return;
@@ -252,14 +253,14 @@ public class HG extends JavaPlugin {
 		unRegisterPreEvents();
 		registerGameEvents();
 		int parts = 0;
-		for (com.EthanAldrich.WestHG.Gamer g : com.EthanAldrich.WestHG.Gamer.getGamers())
+		for (Gamer g : Gamer.getGamers())
 			if (g.isAlive())
 				parts++;
 		Bukkit.getServer().broadcastMessage(ChatColor.RED + "The tournament has started!\n" + "There are " + parts
 				+ " players participating.\n" + "Everyone is invincible for 2 minutes.\n" + "Good Luck!");
 		World world = Bukkit.getWorld("world");
 		List<Player> participating = new ArrayList<Player>();
-		for (com.EthanAldrich.WestHG.Gamer g : com.EthanAldrich.WestHG.Gamer.getGamers()) {
+		for (WestHG.Gamer g : Gamer.getGamers()) {
 			if (g.getPlayer().getGameMode() != GameMode.SURVIVAL)
 				continue;
 			Player p = g.getPlayer();

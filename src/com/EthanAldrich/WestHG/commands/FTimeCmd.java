@@ -1,12 +1,11 @@
-package com.EthanAldrich.WestHG.commands;
+package WestHG.commands;
 
+import WestHG.HG;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-
-import com.EthanAldrich.WestHG.HG;
 
 public class FTimeCmd implements CommandExecutor {
 
@@ -16,7 +15,7 @@ public class FTimeCmd implements CommandExecutor {
 			sender.sendMessage(ChatColor.RED + "No permission.");
 			return false;
 		}
-		if (HG.HG.gameTime == -1) {
+		if (HG.gameTime == -1) {
 			sender.sendMessage(ChatColor.RED + "The game has not begun yet.");
 			return false;
 		}
@@ -31,7 +30,7 @@ public class FTimeCmd implements CommandExecutor {
 			sender.sendMessage(ChatColor.RED + "The time must be an integer.");
 			return false;
 		}
-		HG.HG.gameTime = time;
+		HG.gameTime = time;
 		Bukkit.getServer()
 				.broadcastMessage(ChatColor.RED + sender.getName() + " has set the game time to " + time + " seconds.");
 		return false;

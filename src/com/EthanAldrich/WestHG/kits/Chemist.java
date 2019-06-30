@@ -1,7 +1,8 @@
-package com.EthanAldrich.WestHG.kits;
+package WestHG.kits;
 
-import java.util.List;
-
+import WestHG.Gamer;
+import WestHG.HG;
+import WestHG.api.SecondEvent;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
@@ -9,9 +10,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.Potion;
 import org.bukkit.potion.PotionType;
 
-import com.EthanAldrich.WestHG.Gamer;
-import com.EthanAldrich.WestHG.HG;
-import com.EthanAldrich.WestHG.api.SecondEvent;
+import java.util.List;
 
 public class Chemist extends Kit {
 
@@ -22,7 +21,7 @@ public class Chemist extends Kit {
 
 	@EventHandler
 	public void onSec(SecondEvent event) {
-		if (HG.HG.gameTime % 240 == 0)
+		if (HG.gameTime % 240 == 0)
 			for (Gamer g : Gamer.getGamers())
 				if (g.getKit() == this) {
 					g.getPlayer().getInventory().addItem(getItemss());

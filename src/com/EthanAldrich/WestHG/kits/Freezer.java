@@ -1,9 +1,8 @@
-package com.EthanAldrich.WestHG.kits;
+package WestHG.kits;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
+import WestHG.Gamer;
+import WestHG.HG;
+import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -15,10 +14,9 @@ import org.bukkit.event.entity.ProjectileLaunchEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
 
-import com.EthanAldrich.WestHG.Gamer;
-import com.EthanAldrich.WestHG.HG;
-
-import net.md_5.bungee.api.ChatColor;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class Freezer extends Kit {
 

@@ -1,8 +1,8 @@
-package com.EthanAldrich.WestHG.commands;
+package WestHG.commands;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import WestHG.Gamer;
+import WestHG.HG;
+import WestHG.kits.Kit;
 import org.apache.commons.lang.WordUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -18,9 +18,8 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import com.EthanAldrich.WestHG.Gamer;
-import com.EthanAldrich.WestHG.HG;
-import com.EthanAldrich.WestHG.kits.Kit;
+import java.util.ArrayList;
+import java.util.List;
 
 public class KitCmd implements CommandExecutor, TabCompleter, Listener {
 
@@ -32,7 +31,7 @@ public class KitCmd implements CommandExecutor, TabCompleter, Listener {
 	@Override
 	public boolean onCommand(CommandSender sender, Command arg1, String arg2, String[] args) {
 		Gamer g = Gamer.getGamer((Player) sender);
-		if (HG.HG.gameTime > -1) {
+		if (HG.gameTime > -1) {
 			sender.sendMessage(ChatColor.RED
 					+ "You cannot choose a kit because your game has already started.\nYou are currently the "
 					+ g.getKit().getKitName() + " kit.");
@@ -105,7 +104,7 @@ public class KitCmd implements CommandExecutor, TabCompleter, Listener {
 			return;
 		event.setCancelled(true);
 		// Gamer g = Gamer.getGamer((Player) event.getWhoClicked());
-		if (HG.HG.gameTime > 0)
+		if (HG.gameTime > 0)
 			return;
 		ItemStack item = event.getCurrentItem();
 		if (item.getItemMeta() != null) {

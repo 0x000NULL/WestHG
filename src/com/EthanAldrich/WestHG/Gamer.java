@@ -1,17 +1,12 @@
-package com.EthanAldrich.WestHG;
+package WestHG;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.UUID;
-
+import WestHG.kits.Kit;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
-import com.EthanAldrich.WestHG.kits.Kit;
+import java.util.*;
 
 public class Gamer {
 
@@ -88,7 +83,7 @@ public class Gamer {
 
 	public static List<Gamer> getAliveGamers() {
 		List<Gamer> alive = new ArrayList<Gamer>();
-		boolean started = HG.HG.gameTime > -1;
+		boolean started = HG.gameTime > -1;
 		for (Gamer g : gamers.values())
 			if (g.getPlayer() == null) {
 				g.remove();

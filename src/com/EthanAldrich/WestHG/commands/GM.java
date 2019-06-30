@@ -1,4 +1,4 @@
-package com.EthanAldrich.WestHG.commands;
+package WestHG.commands;
 
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;

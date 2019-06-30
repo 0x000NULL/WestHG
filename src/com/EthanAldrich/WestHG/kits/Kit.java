@@ -1,9 +1,9 @@
-package com.EthanAldrich.WestHG.kits;
+package WestHG.kits;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
+import WestHG.Gamer;
+import WestHG.HG;
+import WestHG.utils.NameAlreadyInUseException;
+import WestHG.utils.Undroppable;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -12,10 +12,10 @@ import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import com.EthanAldrich.WestHG.Gamer;
-import com.EthanAldrich.WestHG.HG;
-import com.EthanAldrich.WestHG.utils.NameAlreadyInUseException;
-import com.EthanAldrich.WestHG.utils.Undroppable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 
 public abstract class Kit implements Listener {
 

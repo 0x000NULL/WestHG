@@ -1,7 +1,7 @@
-package com.EthanAldrich.WestHG.api;
+package WestHG.api;
 
-import com.EthanAldrich.WestHG.kits.Kit;
-import com.EthanAldrich.WestHG.utils.NameAlreadyInUseException;
+import WestHG.kits.Kit;
+import WestHG.utils.NameAlreadyInUseException;
 
 public class NubesHGAPI {
 

@@ -1,4 +1,4 @@
-package com.EthanAldrich.WestHG.commands;
+package WestHG.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;

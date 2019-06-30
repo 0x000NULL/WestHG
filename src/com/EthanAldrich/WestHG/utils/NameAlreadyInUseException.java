@@ -1,4 +1,4 @@
-package com.EthanAldrich.WestHG.utils;
+package WestHG.utils;
 
 public class NameAlreadyInUseException extends Exception {
 

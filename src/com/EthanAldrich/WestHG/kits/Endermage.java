@@ -1,14 +1,7 @@
-package com.EthanAldrich.WestHG.kits;
+package WestHG.kits;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.GameMode;
-import org.bukkit.Location;
-import org.bukkit.Material;
+import WestHG.HG;
+import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Entity;
@@ -21,7 +14,9 @@ import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 
-import com.EthanAldrich.WestHG.HG;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class Endermage extends Kit {
 
@@ -41,7 +36,7 @@ public class Endermage extends Kit {
 			p.updateInventory();
 			if (!hasAbillity(p))
 				return;
-			if (HG.HG.gameTime < 120) {
+			if (HG.gameTime < 120) {
 				event.getPlayer().sendMessage(ChatColor.RED + "You can do that once the invincibillity has worn off.");
 				return;
 			}
@@ -52,7 +47,7 @@ public class Endermage extends Kit {
 				return;
 			}
 			if ((!cooldown.containsKey(p.getName()))
-					|| (((Long) cooldown.get(p.getName())).longValue() < System.currentTimeMillis())) {
+					|| (cooldown.get(p.getName()).longValue() < System.currentTimeMillis())) {
 				Material mat = event.getClickedBlock().getType();
 				b.setType(Material.ENDER_PORTAL_FRAME);
 				b.setData((byte) 1);
@@ -137,8 +132,8 @@ public class Endermage extends Kit {
 	@EventHandler
 	public void onDamage(EntityDamageByEntityEvent event) {
 		if (((event.getEntity() instanceof Player)) && ((event.getDamager() instanceof Player))
-				&& ((invincible.contains(((Player) event.getEntity()).getName()))
-						|| (invincible.contains(((Player) event.getDamager()).getName()))))
+				&& ((invincible.contains(event.getEntity().getName()))
+				|| (invincible.contains(event.getDamager().getName()))))
 			event.setCancelled(true);
 	}
 

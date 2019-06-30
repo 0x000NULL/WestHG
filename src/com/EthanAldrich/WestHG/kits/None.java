@@ -1,10 +1,10 @@
-package com.EthanAldrich.WestHG.hg.kits;
-
-import java.util.ArrayList;
-import java.util.List;
+package WestHG.kits;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class None extends Kit {
 

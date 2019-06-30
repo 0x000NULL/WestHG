@@ -1,9 +1,6 @@
-package com.EthanAldrich.WestHG.hg.kits;
+package WestHG.kits;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
+import WestHG.api.SecondEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -14,7 +11,9 @@ import org.bukkit.event.player.PlayerToggleSneakEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
 
-import com.EthanAldrich.WestHG.api.SecondEvent;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class Dwarf extends Kit {
 

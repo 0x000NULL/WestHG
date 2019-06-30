@@ -1,10 +1,10 @@
-package com.EthanAldrich.WestHG.api;
-
-import java.util.List;
+package WestHG.api;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+
+import java.util.List;
 
 public class GameStartEvent extends Event {
 

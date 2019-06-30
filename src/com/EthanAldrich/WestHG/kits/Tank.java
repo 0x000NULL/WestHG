@@ -1,7 +1,4 @@
-package com.EthanAldrich.WestHG.kits;
-
-import java.util.ArrayList;
-import java.util.List;
+package WestHG.kits;
 
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -9,6 +6,9 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.inventory.ItemStack;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Tank extends Kit {
 
@@ -25,7 +25,7 @@ public class Tank extends Kit {
 	@EventHandler
 	public void onDeath(EntityDeathEvent event) {
 		if ((event.getEntity().getKiller() instanceof Player)) {
-			if (hasAbillity((Player) event.getEntity().getKiller()))
+            if (hasAbillity(event.getEntity().getKiller()))
 				event.getEntity().getWorld().createExplosion(event.getEntity().getLocation(), 5.0F);
 		}
 	}

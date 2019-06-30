@@ -1,12 +1,10 @@
-package com.EthanAldrich.WestHG.commands;
+package WestHG.commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-
-import com.EthanAldrich.WestHG.HG;
 
 public class StartCmd implements CommandExecutor {
 
@@ -16,12 +14,12 @@ public class StartCmd implements CommandExecutor {
 			sender.sendMessage(ChatColor.RED + "No permission.");
 			return false;
 		}
-		if (HG.HG.preTime == -1) {
+		if (WestHG.HG.HG.preTime == -1) {
 			sender.sendMessage(ChatColor.RED + "The game has already begun.");
 			return false;
 		}
 		if (args.length == 0) {
-			HG.HG.preTime = 0;
+			WestHG.HG.HG.preTime = 0;
 			Bukkit.getServer().broadcastMessage(ChatColor.RED + sender.getName() + " has forced the game to start!");
 			return false;
 		}
@@ -36,9 +34,13 @@ public class StartCmd implements CommandExecutor {
 			sender.sendMessage(ChatColor.RED + "Delay must be an integer.");
 			return false;
 		}
-		HG.HG.preTime = time;
+		WestHG.HG.HG.preTime = time;
 		Bukkit.getServer().broadcastMessage(
 				ChatColor.RED + sender.getName() + " has set the startup time to " + time + " seconds.");
 		return false;
 	}
 }
+
+
+
+

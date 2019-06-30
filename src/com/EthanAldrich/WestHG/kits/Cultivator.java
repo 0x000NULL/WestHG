@@ -1,7 +1,4 @@
-package com.EthanAldrich.WestHG.kits;
-
-import java.util.ArrayList;
-import java.util.List;
+package WestHG.kits;
 
 import org.bukkit.CropState;
 import org.bukkit.Material;
@@ -13,6 +10,9 @@ import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.material.Crops;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Cultivator extends Kit {
 

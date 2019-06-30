@@ -1,14 +1,10 @@
-package com.EthanAldrich.WestHG.data;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.UUID;
+package WestHG.data;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
+
+import java.sql.*;
+import java.util.UUID;
 
 public class MySQL {
 

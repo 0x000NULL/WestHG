@@ -1,10 +1,9 @@
-package com.EthanAldrich.WestHG.api;
+package WestHG.api;
 
+import WestHG.Gamer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
-
-import com.EthanAldrich.WestHG.Gamer;
 
 public class WinEvent extends Event {
 

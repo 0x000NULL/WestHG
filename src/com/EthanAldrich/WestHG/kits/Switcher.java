@@ -1,22 +1,18 @@
-package com.EthanAldrich.WestHG.kits;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+package WestHG.kits;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.entity.Entity;
-import org.bukkit.entity.EntityType;
-import org.bukkit.entity.Player;
-import org.bukkit.entity.Projectile;
-import org.bukkit.entity.Snowball;
+import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.entity.ProjectileLaunchEvent;
 import org.bukkit.inventory.ItemStack;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class Switcher extends Kit {
 
@@ -38,7 +34,7 @@ public class Switcher extends Kit {
 	@EventHandler
 	public void onDamage(EntityDamageByEntityEvent event) {
 		if ((event.getDamager() instanceof Snowball)) {
-			if (!balls.contains((Snowball) event.getDamager()))
+            if (!balls.contains(event.getDamager()))
 				return;
 			Player thrower = (Player) ((Projectile) event.getDamager()).getShooter();
 			Location loc1 = thrower.getPlayer().getLocation().clone();
@@ -60,7 +56,7 @@ public class Switcher extends Kit {
 			if ((cooldown.containsKey(p.getName())) && cooldown.get(p.getName()) > System.currentTimeMillis()) {
 				event.setCancelled(true);
 				ItemStack balli = createItem(Material.SNOW_BALL, "�lSwitcher ball", false);
-				p.getInventory().addItem(new ItemStack[] { balli });
+                p.getInventory().addItem(balli);
 				p.updateInventory();
 				p.sendMessage(ChatColor.RED + "Still on cooldown for "
 						+ (int) Math.ceil((cooldown.get(p.getName()) - System.currentTimeMillis()) / 1000D)

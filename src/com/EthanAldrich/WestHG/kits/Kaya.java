@@ -1,8 +1,4 @@
-package com.EthanAldrich.WestHG.kits;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+package WestHG.kits;
 
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
@@ -20,6 +16,10 @@ import org.bukkit.event.inventory.PrepareItemCraftEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapelessRecipe;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class Kaya extends Kit {
 

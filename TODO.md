@@ -1,8 +1,5 @@
 TODO
 ======
-# REMOVE METRICS
-* *Or just fix it*.... 
-
 
 ## Add scoring
 1. SQL support
@@ -10,6 +7,4 @@ TODO
 3. OBS integration
 
 ## MAKE IT WORK
-* Fix the repos
-* fix missing symbols.
-* REMOVE METRICS
+* fix force field.

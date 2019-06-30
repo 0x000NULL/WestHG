@@ -1,8 +1,6 @@
-package com.EthanAldrich.WestHG.kits;
+package WestHG.kits;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import WestHG.HG;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -12,7 +10,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.inventory.ItemStack;
 
-import com.EthanAldrich.WestHG.HG;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Digger extends Kit {
 

@@ -1,8 +1,4 @@
-package com.EthanAldrich.WestHG.kits;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+package WestHG.kits;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -11,6 +7,10 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class Monk extends Kit {
 

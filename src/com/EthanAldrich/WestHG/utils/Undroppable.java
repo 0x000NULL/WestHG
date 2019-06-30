@@ -1,4 +1,4 @@
-package com.EthanAldrich.WestHG.utils;
+package WestHG.utils;
 
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.enchantments.EnchantmentTarget;

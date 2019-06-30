@@ -1,6 +1,7 @@
-package com.EthanAldrich.WestHG.kits;
+package WestHG.kits;
 
-import com.EthanAldrich.WestHG.HG;
+
+import WestHG.HG;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -13,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Cannibal extends Kit {
+public class Cannibal extends WestHG.kits.Kit {
 
 	@EventHandler
 	public void onDamage(EntityDamageByEntityEvent event) {
@@ -23,7 +24,7 @@ public class Cannibal extends Kit {
 		if (((event.getEntity() instanceof Player)) && ((event.getDamager() instanceof Player))) {
 			Player damager = (Player) event.getDamager();
 			if (hasAbillity(damager)) {
-				if (HG.HG.gameTime < 120) {
+                if (HG.gameTime < 120) {
 					return;
 				}
 				Player damaged = (Player) event.getEntity();
