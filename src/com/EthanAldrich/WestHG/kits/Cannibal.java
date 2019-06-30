@@ -1,9 +1,6 @@
 package com.EthanAldrich.WestHG.kits;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
+import com.EthanAldrich.WestHG.HG;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -12,7 +9,9 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
-import com.EthanAldrich.WestHG.HG;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class Cannibal extends Kit {
 

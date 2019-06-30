@@ -3,17 +3,7 @@ package WestHG;
 import com.EthanAldrich.WestHG.api.GameStartEvent;
 import com.EthanAldrich.WestHG.api.SecondEvent;
 import com.EthanAldrich.WestHG.api.WinEvent;
-import com.EthanAldrich.WestHG.commands.FeastCmd;
-import com.EthanAldrich.WestHG.commands.FFeastCmd;
-import com.EthanAldrich.WestHG.commands.FTimeCmd;
-import com.EthanAldrich.WestHG.commands.GM;
-import com.EthanAldrich.WestHG.commands.HGCmd;
-import com.EthanAldrich.WestHG.commands.InvCmd;
-import com.EthanAldrich.WestHG.commands.KitCmd;
-import com.EthanAldrich.WestHG.commands.Lag;
-import com.EthanAldrich.WestHG.commands.SpawnCmd;
-import com.EthanAldrich.WestHG.commands.SpectateCmd;
-import com.EthanAldrich.WestHG.commands.StartCmd;
+import com.EthanAldrich.WestHG.commands.*;
 import com.EthanAldrich.WestHG.data.MySQL;
 import com.EthanAldrich.WestHG.handlers.Cakes;
 import com.EthanAldrich.WestHG.handlers.Feast;
@@ -143,12 +133,6 @@ public class HG extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
-		try {
-			metrics = new Metrics;
-			metrics.start();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 		if (config.getBoolean("regenerate"))
 			GenerationHandler.generateChunks();
 		Kit.init();

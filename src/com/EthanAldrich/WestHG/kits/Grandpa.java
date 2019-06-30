@@ -1,13 +1,13 @@
 package com.EthanAldrich.WestHG.hg.kits;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 
-public class Grandpa extends Kit {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Grandpa extends com.EthanAldrich.WestHG.kits.Kit {
 
 	@Override
 	public String getKitName() {
