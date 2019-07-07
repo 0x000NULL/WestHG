@@ -7,6 +7,7 @@ WestHG
 ![GitHub issues][repo-issues]
 ![GitHub pull requests][repo-pulls]
 ![GitHub release][repo-version]
+![Coverage][coverage]
 
 A hunger games plugin based off of NubesHG with an api so you can add kits yourself!
 Check the wiki if you want to make your own kits.
@@ -52,3 +53,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [repo-issues]: https://img.shields.io/github/issues-raw/ethanaldrich9986/WestHG.svg?style=flat-square
 [repo-pulls]: https://img.shields.io/github/issues-pr-raw/ethanaldrich9986/WestHG.svg?style=flat-square
 [repo-version]: https://img.shields.io/github/release/ethanaldrich9986/WestHG.svg?style=flat-square
+[coverage]: https://coveralls.io/repos/github/ethanaldrich9986/WestHG/badge.svg?branch=master
