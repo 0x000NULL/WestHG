@@ -7,8 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03fdcaca-0f58-4e59-beba-15cb48b2a0e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/EthanAldrich/org/bukkit/enchantments/EnchantmentWrapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/Undroppable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/Undroppable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/Undroppable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="21" />
+            <state relative-caret-position="255">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#589#590#0" expanded="true" />
@@ -223,6 +224,11 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="WestHG" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="WestHG" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
@@ -298,6 +304,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.bukkit.enchantments" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Ethan\WestHG\src\com\resources" />
     </key>
@@ -337,7 +346,7 @@
       <workItem from="1563221761434" duration="5790000" />
       <workItem from="1563250769577" duration="3266000" />
       <workItem from="1563256759214" duration="275000" />
-      <workItem from="1563257050466" duration="1023000" />
+      <workItem from="1563257050466" duration="1278000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed main repo problems.">
       <created>1561582456728</created>
@@ -374,11 +383,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563259354663</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="It Builds! but still wtf">
+      <created>1563259774152</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1563259774152</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30815000" />
+    <option name="totallyTimeSpent" value="31070000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -516,7 +532,8 @@
     <MESSAGE value="Fixed main repo problems." />
     <MESSAGE value="Brought down ammount of errors" />
     <MESSAGE value="idk wtf us happening" />
-    <option name="LAST_COMMIT_MESSAGE" value="idk wtf us happening" />
+    <MESSAGE value="It Builds! but still wtf" />
+    <option name="LAST_COMMIT_MESSAGE" value="It Builds! but still wtf" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -884,10 +901,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/bukkit/1.12.2-R0.1-SNAPSHOT/bukkit-1.12.2-R0.1-20180712.012114-155-sources.jar!/org/bukkit/enchantments/Enchantment.java">
+    <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/org/bukkit/enchantments/EnchantmentWrapperImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        <state relative-caret-position="30">
+          <caret line="2" column="63" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -898,17 +915,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/org/bukkit/enchantments/EnchantmentWrapperImpl.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/bukkit/bukkit/1.12.2-R0.1-SNAPSHOT/bukkit-1.12.2-R0.1-20180712.012114-155-sources.jar!/org/bukkit/enchantments/Enchantment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="63" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
+        <state relative-caret-position="105">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/EthanAldrich/WestHG/utils/Undroppable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="21" />
+        <state relative-caret-position="255">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#589#590#0" expanded="true" />
