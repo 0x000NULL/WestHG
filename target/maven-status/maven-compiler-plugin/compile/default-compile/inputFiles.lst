@@ -36,6 +36,7 @@
 /home/stripcheese/IdeaProjects/WestHG/src/com/EthanAldrich/WestHG/kits/Cultivator.java
 /home/stripcheese/IdeaProjects/WestHG/src/com/EthanAldrich/WestHG/kits/Frosty.java
 /home/stripcheese/IdeaProjects/WestHG/src/com/EthanAldrich/WestHG/utils/Undroppable.java
+/home/stripcheese/IdeaProjects/WestHG/src/com/EthanAldrich/org/bukkit/enchantments/EnchantmentImpl.java
 /home/stripcheese/IdeaProjects/WestHG/src/com/EthanAldrich/WestHG/kits/FisherMan.java
 /home/stripcheese/IdeaProjects/WestHG/src/com/EthanAldrich/WestHG/commands/KitCmd.java
 /home/stripcheese/IdeaProjects/WestHG/src/com/EthanAldrich/WestHG/kits/Scout.java
@@ -56,6 +57,7 @@
 /home/stripcheese/IdeaProjects/WestHG/src/com/EthanAldrich/WestHG/kits/Grandpa.java
 /home/stripcheese/IdeaProjects/WestHG/src/com/EthanAldrich/WestHG/commands/InvCmd.java
 /home/stripcheese/IdeaProjects/WestHG/src/com/EthanAldrich/WestHG/commands/Lag.java
+/home/stripcheese/IdeaProjects/WestHG/src/com/EthanAldrich/org/bukkit/enchantments/EnchantmentWrapperImpl.java
 /home/stripcheese/IdeaProjects/WestHG/src/com/EthanAldrich/WestHG/kits/Endermage.java
 /home/stripcheese/IdeaProjects/WestHG/src/com/EthanAldrich/WestHG/kits/Fireman.java
 /home/stripcheese/IdeaProjects/WestHG/src/com/EthanAldrich/WestHG/Gamer.java
